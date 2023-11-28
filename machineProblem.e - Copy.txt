@@ -1,0 +1,6 @@
+.code
+daddiu r1, r0, #0099 ;value holder
+dsll r3, r1, #0004 ;shifts the value of r1 to its left by 4 bits  
+sb r3, 0000(r0) ;store the value of r3 into the memory index 0
+lbu r5, 0000(r0); loads the value of memory index[0] to r5
+dsrl r4, r5, #0004 ;shifts to the right the value of r5 by 4 bits
